@@ -187,12 +187,10 @@ These additional encodings significantly simplify the sample invoke file from ab
 ``` json
 {
     "contract": { "hash": "0xc0dee90a1ce8fbb94169608907e5986a6ce909e7" },
-    "args": [
-        "register",                               // direct encoded string
-        [                                         // direct encoded array
+    "operation": "register",
+    "args": [ // direct encoded array
             "neo.org",
             "@ANxbzd4FuNr1BBMJX2ZixSzFKFWeFCReAb" // base56 encoded Hash160
-        ]
     ]
 }
 ```
